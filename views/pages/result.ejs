@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include ("../partials/header.ejs") %>
+</head>
+
+<body>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Postal Rate Calculator</h1>
+  </div>
+</div>
+
+<div class="container">
+
+  <h3>Results</h3>
+  <div id='results'>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <span class="badge"><%= mailName %></span>
+        Mail type:
+      </li>
+      <li class="list-group-item">
+        <span class="badge"><%= weight %></span>
+        Mail Weight:
+      </li>
+      <li class="list-group-item">
+        <span class="badge">$<%= mailPrice %></span>
+        Mail price:
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

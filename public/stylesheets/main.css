@@ -25,3 +25,18 @@
     .jumbotron .lang-logo img {
       max-width: 100%; }
 
+#results {
+  max-width: 450px;
+}
+#results li.list-group-item {
+  height: 70px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+#results .badge {
+  padding: 7px;
+  font-size: 14px;
+}

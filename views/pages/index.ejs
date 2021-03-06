@@ -14,28 +14,28 @@
 
 <div class="container">
 
-  <form action="/calculate" class="form-horizontal" id="main-form">
+  <form action="/calculate" method="POST" class="form-horizontal" id="main-form">
     <div class="form-group">
       <label for="weight-input" class="col-sm-2 control-label">Item Weight</label>
       <div class="col-sm-10">
-        <input type="number" class="form-control" id="weight-input" placeholder="00">
+        <input type="number" class="form-control" id="weight-input" placeholder="00" name="weight">
       </div>
     </div>
     <div class="form-group">
       <label for="mail-input" class="col-sm-2 control-label">Type of Mail</label>
       <div class="col-sm-10">
-        <select class="form-control" id="mail-input">
-          <option>Letters (Stamped)</option>
-          <option>Letters (Metered)</option>
-          <option>Large Envelopes (Flats)</option>
-          <option>First-Class Package Service—Retail</option>
+        <select class="form-control" id="mail-input" name="mail">
+          <option value="stamped">Letters (Stamped)</option>
+          <option value="metered">Letters (Metered)</option>
+          <option value="flats">Large Envelopes (Flats)</option>
+          <option value="firstClass">First-Class Package Service—Retail</option>
         </select>
       </div>
     </div>
     
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Sign in</button>
+        <button type="submit" class="btn btn-default">Calculate</button>
       </div>
     </div>
   </form>
